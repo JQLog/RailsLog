@@ -1,0 +1,48 @@
+%p#notice= notice
+
+%p
+  %b Email:
+  = @user.email
+%p
+  %b Encrypted password:
+  = @user.encrypted_password
+%p
+  %b Reset password token:
+  = @user.reset_password_token
+%p
+  %b Reset password sent at:
+  = @user.reset_password_sent_at
+%p
+  %b Remember created at:
+  = @user.remember_created_at
+%p
+  %b Sign in count:
+  = @user.sign_in_count
+%p
+  %b Current sign in at:
+  = @user.current_sign_in_at
+%p
+  %b Last sign in at:
+  = @user.last_sign_in_at
+%p
+  %b Current sign in ip:
+  = @user.current_sign_in_ip
+%p
+  %b Last sign in ip:
+  = @user.last_sign_in_ip
+%p
+  %b Created at:
+  = @user.created_at
+%p
+  %b Updated at:
+  = @user.updated_at
+%p
+  %b Supplier:
+  = @user.supplier_id
+%p
+  %b Is admin:
+  = @user.is_admin
+
+= link_to 'Edit', edit_user_path(@user)
+\|
+= link_to 'Back', users_index_path

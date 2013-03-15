@@ -1,0 +1,52 @@
+= form_for @user do |f|
+  - if @user.errors.any?
+    #error_explanation
+      %h2= "#{pluralize(@user.errors.count, "error")} prohibited this user from being saved:"
+      %ul
+        - @user.errors.full_messages.each do |msg|
+          %li= msg
+
+  .field
+    = f.label :email
+    = f.text_field :email
+  .field
+    = f.label :encrypted_password
+    = f.text_field :encrypted_password
+  .field
+    = f.label :reset_password_token
+    = f.text_field :reset_password_token
+  .field
+    = f.label :reset_password_sent_at
+    = f.datetime_select :reset_password_sent_at
+  .field
+    = f.label :remember_created_at
+    = f.datetime_select :remember_created_at
+  .field
+    = f.label :sign_in_count
+    = f.number_field :sign_in_count
+  .field
+    = f.label :current_sign_in_at
+    = f.date_select :current_sign_in_at
+  .field
+    = f.label :last_sign_in_at
+    = f.datetime_select :last_sign_in_at
+  .field
+    = f.label :current_sign_in_ip
+    = f.text_field :current_sign_in_ip
+  .field
+    = f.label :last_sign_in_ip
+    = f.text_field :last_sign_in_ip
+  .field
+    = f.label :created_at
+    = f.datetime_select :created_at
+  .field
+    = f.label :updated_at
+    = f.datetime_select :updated_at
+  .field
+    = f.label :supplier_id
+    = f.number_field :supplier_id
+  .field
+    = f.label :is_admin
+    = f.check_box :is_admin
+  .actions
+    = f.submit 'Save'

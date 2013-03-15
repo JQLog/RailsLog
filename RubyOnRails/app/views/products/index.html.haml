@@ -1,0 +1,24 @@
+%h1= I18n.t('products.index.title')
+
+%table.index_table.zebra.sortable
+  %tr
+    %th= I18n.t('products.index.name')
+    %th= I18n.t('products.index.description')
+    %th= I18n.t('products.index.price')
+    %th= I18n.t('products.index.tax')
+    %th= I18n.t('general.actions')
+
+  - @products.each do |product|
+    %tr
+      %td= product.name
+      %td= product.description
+      %td= product.price
+      %td= product.tax
+      %td
+        .btn-group
+          = link_to I18n.t('general.show'), product, :class => 'btn btn-mini', id: 'product_show'
+          = link_to I18n.t('general.edit'), edit_product_path(product), :class => 'btn btn-mini', id: 'product_edit'
+          = link_to I18n.t('general.destroy'), product, :data => { :confirm => 'Are you sure?' }, :method => :delete, :class => 'btn btn-mini',id: 'product_destroy'
+%br
+
+= link_to I18n.t('products.index.new_product'), new_product_path

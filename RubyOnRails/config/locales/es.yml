@@ -1,0 +1,606 @@
+es:
+
+  general:
+    show: 'Visualizar'
+    back: 'Voltar'
+    add: 'Adcionar'
+    create: 'Criar'
+    search: 'Buscar'
+    save: 'Salvar'
+    close: 'Cerrar'
+    cancel: 'Cancelar'
+    destroy: 'Eliminar'
+    edit: 'Modificar'
+    sign_up_users: 'Vendedor'
+    sign_up_admins: 'Emissor'
+    actions: 'Adcionar'
+    register: 'Registra-se'
+    are_you_sure: 'Esta seguro?'
+    yes: 'Sim'
+    no: 'Nao'
+
+  orders:
+    
+    view:
+      number: 'Número:'
+      notes: 'Notas:'
+      delivery_address: 'Endereco de envio:'
+      client: 'Cliente:'
+      products: 'Productos'
+      user: 'Usuario:'
+      final_client: 'Codigo NF-e (44 Caracter):'
+      due_date: 'Data de vencimiento:'
+      name: 'Nome'
+      quantity: 'Quantidade'
+      price: 'Preco'
+    
+    add_prdocut:
+      name: 'Nome:'
+      price: 'Preco:'
+      quantity: 'Quantidade:'
+      add: 'Adcionar Producto'
+      detaill: 'Detalle'
+
+    form:
+      select_client: 'Selecao de Cliente'
+      client_name: 'Nome do cliente'
+      client_phone: 'Telefone cliente'
+      final_client: 'Codigo NF-e (44 Caracter)'
+      order_detail: 'Detalhes Ordem Compra'
+      invoice_number: 'Número pedido'
+      notes: 'Notas'
+      due_date: 'Data de vencimiento'
+      delivery_address: 'Endereco de envio'
+    
+    new_client_modal:
+      title: 'Registrar Cliente'
+      name: 'Nome'
+      rut: 'Cidade'
+      contact: 'Contacto'
+      email: 'E-mail'
+      address: 'Endereco'
+      phone: 'Telefone'
+    
+    table_products:
+      name: 'Nome'
+      quantity: 'Quantidade'
+      price: 'Preco'
+      options: 'Opciones'
+
+    index:
+      client_name: 'Nome do cliente'
+      final_client: 'Codigo NF-e'
+      between_date: 'Entre as Datas'
+      pay: 'Entregue'
+      active: 'Ativo'
+      status: 'Estado'
+      number: 'Número'
+      delivery_address: 'Endereco envio'
+      due_date: 'Data vencimiento'
+      notes: 'Notas'
+      options: 'Opciones'
+      new_order: 'Registra Ordem Compra'
+      client: 'Cliente'
+      unpaid: 'Nao Entregue'
+      disabled: 'Desactivado'
+      show: 'Visualizar'
+      title: 'Ordem Compra'
+
+    new:
+      title: 'Nova Ordem de Compra'
+
+  clients:
+  
+    form:
+      name: 'Nome'
+      rut: 'Cidade'
+      contact: 'Contacto'
+      email: 'E-mail'
+      address: 'Endereco'
+      phone: 'Telefone'
+
+    show:
+      title: 'Visualizacao de Cliente'
+      name: 'Nome:'
+      rut: 'Cidade:'
+      contact: 'Contacto:'
+      email: 'E-mail:'
+      address: 'Endereco:'
+      phone: 'Telefone:'
+
+    edit:
+      tile: 'Modificacao de Cliente'
+
+    new:
+      title: 'Entrada de Cliente'
+
+    index:
+      title: 'Clientes'
+      new_client: 'Registrar Cliente'
+      name: 'Nome'
+      rut: 'Cidade'
+      contact: 'Contacto'
+      email: 'E-mail'
+      address: 'Endereco'
+      phone: 'Telefone'
+
+  layouts:
+
+    menu:
+      orders: 'Ordem Compra'
+      clients: 'Clientes'
+      products: 'Productos'
+      users: 'Usuarios'
+      logged_in_as: 'Conectado com '
+
+  products:
+
+    form:
+      name: 'Nome'
+      description: 'Descricao'
+      price: 'Preco'
+      tax: 'Imposto'
+
+    edit:
+      title: 'Modificacao de Producto'
+
+    new:
+      title: 'Entrada de Producto'
+
+    show:
+      name: 'Nome:'
+      description: 'Descricao:'
+      price: 'Preco:'
+      tax: 'Imposto:'
+
+    index:
+      title: 'Productos'
+      name: 'Nome'
+      description: 'Descricao'
+      price: 'Price'
+      tax: 'Imposto'
+      new_product: 'Criar Producto'
+
+  suppliers:
+
+    form:
+      name: 'Razón Social'
+      rut: 'Cidade'
+      contact_person: 'Persona de contacto'
+      email: 'E-mail'
+      address: 'Endereco'
+      phone: 'Telefone'
+
+    edit:
+      title: 'Modificacao de Proveedor'
+
+    new:
+      title: 'Entrada de Proveedor'
+
+    show:
+      title: 'Visualizacao de Proveedor'
+      name: 'Nome:'
+      rut: 'Cidade:'
+      contact_person: 'Persona de contacto:'
+      email: 'E-mail:'
+      address: 'Endereco:'
+      phone: 'Telefone:'
+
+    index:
+      title: 'Proveedores'
+      name: 'Nome'
+      rut: 'Cidade'
+      contact_person: 'Persona de contacto'
+      email: 'E-mail'
+      address: 'Endereco'
+      phone: 'Telefone'
+      new_suplier: 'Criar Proveedor'
+  
+  users:
+
+    form:
+      email: 'E-mail'
+      password: 'Senha'
+      password_confirm: 'Confirmacao de Senha'
+      suppliers: 'Proveedores'
+    
+    new:
+      title: 'Entrada de Usuario'
+
+    edit:
+      title: 'Modificacao de Usuario'
+
+    show:
+      title: 'Visualizacao'
+      email: 'E-mail:'
+      sign_in_count: 'Quantidade de Entradas:'
+      last_sign_in_at: 'Último Entrada:'
+      created_at: 'Creado el:'
+      updated_at: 'Modificado el:'
+      supplier: 'Proveedor:'
+
+    index:
+      title: 'Usuarios'
+      email: 'E-mail'
+      created_at: 'Creado el'
+      updated_at: 'Modificado el'
+      new_user: 'Criar Usuario'
+      last_sing_in: 'Último Entrada'
+      sing_in_count: 'Quantidade de Entradas'
+      supplier: 'Proveedor'
+
+    confirmations:
+      title: 'Reenvio de Instrucao para Confirmacao'
+      resend: 'Reenviear Instrucao de Confirmacao'
+
+    mailer:
+      welcome: Bienvenido %{email}
+      message: 'Usted puede confirmar su cuenta de correo electrónico a través do siguiente enlace:'
+      confirm: 'Confirmar mi cuenta'
+
+    reset:
+      hello: Hola %{email}
+      message: 'Alguien ha pedido un enlace para Modificar su Senha, y usted puede hacerlo a través do siguiente enlace.'
+      change: 'Modificar mi password'
+      message2: 'Si no has solicitado esto, por favor ignora este mensaje.'
+      message3: 'Su Senha no Modificará hasta que acceda al enlace anterior y crear uno nuevo.'
+
+    unlock:
+      hello: Hola %{email}
+      message: 'Su cuenta ha sido bloqueada debido a un exceso de intentos fallidos.'
+      message2: 'Haga click en el enlace de abajo para desbloquear su cuenta:'
+      unlock: 'Desbloquear mi cuenta'
+
+    password:
+
+      edit:
+        title: 'Modificar de Senha'
+        new_passwprd: 'Nueva Senha'
+        confirm_password: 'Confirmar Senha'
+        change: 'Modificar mi Senha'
+
+      new:
+        title: 'Esqueceu a Senha?'
+        send: 'Enviarme as Instrucao de reinicio'
+
+    sessions:
+
+      new:
+        title: 'Entrada'
+        password: 'Senha'
+        remember_me: 'Lembra?'
+        sign_in: 'Criar'
+
+    shared:
+      sign_in: 'Criar'
+      sign_up: 'Registra-se'
+      forgot_password: 'Esqueceu a Senha?'
+      confirmation_instructions: 'No ha recibido Instrucao de Confirmacao?'
+      unlock_instructions: 'No se recibido Instrucao de desbloqueo?'
+      sign_in_with: Conectado com %{provider}
+
+    unlock:
+      title: 'Reenvio Instrucao de desbloqueo'
+      resend: 'Reenviar Instrucao de desbloqueo'
+
+
+  admin:
+
+    confirmations:
+      title: 'Reenvio de Instrucao para Confirmacao'
+      resend: 'Reenviear Instrucao de Confirmacao'
+
+    mailer:
+      welcome: Bienvenido %{email}
+      message: 'Usted puede confirmar su cuenta de correo electrónico a través do siguiente enlace:'
+      confirm: 'Confirmar mi cuenta'
+
+    reset:
+      hello: Hola %{email}
+      message: 'Alguien ha pedido un enlace para Modificar su Senha, y usted puede hacerlo a través do siguiente enlace.'
+      change: 'Modificar mi password'
+      message2: 'Si no has solicitado esto, por favor ignora este mensaje.'
+      message3: 'Su Senha no Modificará hasta que acceda al enlace anterior y crear uno nuevo.'
+
+    unlock:
+      hello: Hola %{email}
+      message: 'Su cuenta ha sido bloqueada debido a un exceso de intentos fallidos.'
+      message2: 'Haga click en el enlace de abajo para desbloquear su cuenta:'
+      unlock: 'Desbloquear mi cuenta'
+
+    password:
+      
+      edit:
+        title: 'Modificar de Senha'
+        new_passwprd: 'Nueva Senha'
+        confirm_password: 'Confirmar Senha'
+        change: 'Modificar mi Senha'
+
+      new:
+        title: 'Esqueceu a Senha?'
+        send: 'Enviarme as Instrucao de reinicio'
+
+    registrations:
+
+      edit:
+        title: Edición de %{name}
+        password: 'Senha'
+        password_confirm: 'Confirmar Senha'
+        password_help: '(dejar en blanco si no quieres Modificarlo)'
+        current_password: 'Senha actual'
+        current_password_help: '(necesitamos tu Senha actual para confirmar los Modificars)'
+        cancel: 'Cancelar mi cuenta'
+        
+      new:
+        title: 'Registra-se'
+        password: 'Senha'
+        password_confirm: 'Confirmacao de Senha'
+        sign: 'Registrar'
+
+    sessions:
+
+      new:
+        title: 'Entrada'
+        password: 'Senha'
+        remember_me: 'Lembra?'
+        sign_in: 'Criar'
+
+    shared:
+      sign_in: 'Criar'
+      sign_up: 'Registra-se'
+      forgot_password: 'Esqueceu a Senha?'
+      confirmation_instructions: 'No ha recibido Instrucao de Confirmacao?'
+      unlock_instructions: 'No se recibido Instrucao de desbloqueo?'
+      sign_in_with: Conectado com %{provider}
+
+    unlock:
+      title: 'Reenvio Instrucao de desbloqueo'
+      resend: 'Reenviar Instrucao de desbloqueo'
+
+  purchase:
+
+    form:
+      first_name: 'Nome'
+      last_name: 'Apelido'
+      card_number: 'Número de Emissor'
+      card_verification_value: 'Codigo SHA1 Phone'
+      card_type: 'Tipo de Emissor'
+      card_expires: 'Data de vencimiento'
+      next: 'Continuar com o registro'
+
+    new:
+      title: 'Registro'
+
+  index:
+
+    more_information: 'Mais informacoes'
+
+    clients:
+      title: 'Clientes'
+      comments: 'Registre seus clientes em menos de 15 segundos. Nao existe manera mas fácil.'
+      content: 'E uma solucao de Pronta Entrega que permite de forma fácil e rápido registro de clientes.'
+
+    products:
+      title: 'Produtos'
+      comments: 'Consulte e gerencie seus produtos de maneira facilitada.'
+      content: 'A solucao de Pronta Entrega que permite gerenciar seus produtos...'
+
+    orders:
+      title: 'Ordem Compra'
+      comments: 'Gerencie e mantenha seus registro atualizado com os estados de seus pedidos.'
+      content: 'Mantenha a ordem'
+
+  scripts:
+
+    orders:
+      already_added: 'O producto ja esta agregado'
+      chosse_product: 'Deve selecionar um produto'
+      product_unregistred: 'O %{product} no esta registrado'
+      greater_than: 
+        quantity: 'A Quantidade deve ser maior que 0'
+        price: 'O Preco deve ser maior que 0'
+
+  date:
+    abbr_day_names:
+    - dom
+    - lun
+    - mar
+    - mié
+    - jue
+    - vie
+    - sáb
+    abbr_month_names:
+    - 
+    - Jan
+    - fev
+    - mar
+    - abr
+    - mai
+    - jun
+    - jul
+    - ago
+    - set
+    - out
+    - nov
+    - dez
+    day_names:
+    - Domingo
+    - Segunda
+    - Terca
+    - Quarta
+    - Quinta
+    - Sexta
+    - Sabado
+    formats:
+      default: ! '%d/%m/%Y'
+      long: ! '%A, %d de %B de %Y'
+      short: ! '%d de %b'
+    month_names:
+    - 
+    - Janeiro
+    - Fevereiro
+    - Marco
+    - Abril
+    - Maio
+    - Junho
+    - Julho
+    - Agosto
+    - Setembro
+    - Outubro
+    - Novembro
+    - Dezembro
+    order:
+    - :Dia
+    - :Mes
+    - :Ano
+  datetime:
+    distance_in_words:
+      about_x_hours:
+        one: cerca de 1 hora
+        other: cerca de %{count} horas
+      about_x_months:
+        one: cerca de 1 mes
+        other: cerca de %{count} meses
+      about_x_years:
+        one: cerca de 1 año
+        other: cerca de %{count} años
+      almost_x_years:
+        one: casi 1 año
+        other: casi %{count} años
+      half_a_minute: medio minuto
+      less_than_x_minutes:
+        one: menos de 1 minuto
+        other: menos de %{count} minutos
+      less_than_x_seconds:
+        one: menos de 1 segundo
+        other: menos de %{count} segundos
+      over_x_years:
+        one: más de 1 año
+        other: más de %{count} años
+      x_days:
+        one: 1 día
+        other: ! '%{count} días'
+      x_minutes:
+        one: 1 minuto
+        other: ! '%{count} minutos'
+      x_months:
+        one: 1 mes
+        other: ! '%{count} meses'
+      x_seconds:
+        one: 1 segundo
+        other: ! '%{count} segundos'
+    prompts:
+      day: Día
+      hour: Hora
+      minute: Minuto
+      month: Mes
+      second: Segundos
+      year: Ano
+  errors: &errors
+    format: ! '%{attribute} %{message}'
+    messages:
+      accepted: debe ser aceptado
+      blank: no puede estar en blanco
+      confirmation: no coincide com la Confirmacao
+      empty: no puede estar vacío
+      equal_to: debe ser igual a %{count}
+      even: debe ser un número par
+      exclusion: está reservado
+      greater_than: debe ser mayor que %{count}
+      greater_than_or_equal_to: debe ser mayor o igual que %{count}
+      inclusion: no está incluído en la lista
+      invalid: es inválido
+      less_than: debe ser menor que %{count}
+      less_than_or_equal_to: debe ser menor o igual que %{count}
+      not_a_number: no es un número
+      not_an_integer: debe ser un entero
+      odd: debe ser un número non
+      record_invalid: ! 'La validación falló: %{errors}'
+      taken: ya ha sido tomado
+      too_long:
+        one: es demasiado largo (máximo 1 caracter)
+        other: es demasiado largo (máximo %{count} caracteres)
+      too_short:
+        one: es demasiado corto (mínimo 1 caracter)
+        other: es demasiado corto (mínimo %{count} caracteres)
+      wrong_length:
+        one:   longitud errónea (debe ser de 1 caracter)
+        other: longitud errónea (debe ser de %{count} caracteres)
+    template:
+      body: ! 'Revise que los siguientes campos sean válidos:'
+      header:
+        one: ! '%{model} no pudo Salvarse debido a 1 error'
+        other: ! '%{model} no pudo Salvarse debido a %{count} errores'
+  helpers:
+    select:
+      prompt: Por favor selecciona
+    submit:
+      create: Crear %{model}
+      submit: Salvar %{model}
+      update: Actualizar %{model}
+  number:
+    currency:
+      format:
+        delimiter: .
+        format: ! '%u%n'
+        precision: 2
+        separator: ! ','
+        significant: false
+        strip_insignificant_zeros: false
+        unit: $
+    format:
+      delimiter: ! ','
+      precision: 2
+      separator: .
+      significant: false
+      strip_insignificant_zeros: false
+    human:
+      decimal_units:
+        format: ! '%n %u'
+        units:
+          billion: mil millones
+          million: millón
+          quadrillion: mil billones
+          thousand: mil
+          trillion: billón
+          unit: ''
+      format:
+        delimiter: ! ','
+        precision: 3
+        significant: true
+        strip_insignificant_zeros: true
+      storage_units:
+        format: ! '%n %u'
+        units:
+          byte:
+            one: Byte
+            other: Bytes
+          gb: GB
+          kb: KB
+          mb: MB
+          tb: TB
+    percentage:
+      format:
+        delimiter: ! ','
+    precision:
+      format:
+        delimiter: ! ','
+  support:
+    array:
+      last_word_connector: ! ' y '
+      two_words_connector: ! ' y '
+      words_connector: ! ', '
+  time:
+    am: am
+    formats:
+      default: ! '%a, %d de %b de %Y a as %H:%M:%S %Z'
+      long: ! '%A, %d de %B de %Y a as %I:%M %p'
+      short: ! '%d de %b a as %H:%M hrs'
+    pm: pm
+  # remove these aliases after 'activemodel' and 'activerecord' namespaces are removed from Rails repository
+  activemodel:
+    errors:
+      <<: *errors
+  activerecord:
+    errors:
+      <<: *errors

@@ -1,0 +1,5 @@
+<p><%= I18n.t('admin.mailer.welcome',:email => @resource.email)%><p>
+
+<p><%= I18n.t('admin.mailer.message')%></p>
+
+<p><%= link_to I18n.t('admin.mailer.confirm'), confirmation_url(@resource, :confirmation_token => @resource.confirmation_token) %></p>
